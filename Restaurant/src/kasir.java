@@ -2396,7 +2396,7 @@ public class kasir extends javax.swing.JFrame implements data{
         
         this.tampilMinuman();
     }//GEN-LAST:event_cbTehSusuActionPerformed
-    private pstatic class openpdf {
+    private static class openpdf {
 
             public openpdf() {
                 
