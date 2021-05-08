@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author user
  */
-public class kasir extends javax.swing.JFrame {
+public class kasir extends javax.swing.JFrame implements data{
     private Statement stm;
     
     public kasir() {
@@ -127,17 +127,20 @@ public class kasir extends javax.swing.JFrame {
     public int total_makanan;
     public int total_minuman;
     
+    @Override
     public void tampilTotal(){
         
         int total = this.total_makanan + this.total_minuman;
         lbTotal.setText(""+total);
         
     }
+    @Override
     public void kembalian(){
         int total = Integer.parseInt(lbTotal.getText());
         int kembali = bayar - total;
         lbKembalian.setText(""+kembali);
     }
+    @Override
     public void tampilMakanan(){
         int jml = 0;
         jml += this.hargaLalapan * this.jmlLalapan;
@@ -154,7 +157,7 @@ public class kasir extends javax.swing.JFrame {
         this.tampilTotal();
         
     }
-    
+    @Override
     public void tampilMinuman(){
         int jml = 0;
         jml += this.hargaJusApel * this.jmlJusApel;
@@ -2393,11 +2396,23 @@ public class kasir extends javax.swing.JFrame {
         
         this.tampilMinuman();
     }//GEN-LAST:event_cbTehSusuActionPerformed
+    private pstatic class openpdf {
 
+            public openpdf() {
+                
+            }
+
+        private void setVisible(boolean b) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        new Pdf().show();
-        this.setVisible(false);
+        try {
+            Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + "E:\\NetBeansProject\\Restaurant\\Report.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(openpdf.class.getName()).log(Level.SEVERE,null,ex);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
