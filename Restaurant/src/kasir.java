@@ -4,12 +4,6 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 import javax.swing.JFrame;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.text.SimpleDateFormat;
@@ -24,7 +18,7 @@ import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author user
+ * @author Fahri
  */
 public class kasir extends javax.swing.JFrame implements data{
     private Statement stm;
@@ -1951,7 +1945,7 @@ public class kasir extends javax.swing.JFrame implements data{
 
     private void btn_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_exitActionPerformed
         // TODO add your handling code here:
-        int selectOption = JOptionPane.showConfirmDialog(null, "Apakah anda ingin kembali?", "Kembali", JOptionPane.YES_NO_OPTION);
+        int selectOption = JOptionPane.showConfirmDialog(null, "Apakah anda ingin logout?", "Logout", JOptionPane.YES_NO_OPTION);
         
         if (selectOption == JOptionPane.YES_OPTION) {
             login l = new login();

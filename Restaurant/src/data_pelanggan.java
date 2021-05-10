@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 /**
  *
- * @author Junior
+ * @author Fahri
  */
 public class data_pelanggan extends javax.swing.JFrame {
 

@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Junior
+ * @author Fahri
  */
 public class koneksi {
     
