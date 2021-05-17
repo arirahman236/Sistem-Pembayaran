@@ -1,5 +1,3 @@
-package Belajar;
-
 import java.util.Scanner;
 
 public class NoOop{
@@ -27,11 +25,11 @@ public class NoOop{
             System.out.println("===========================================");
             System.out.println("Pilih Makanan = ");
             String makanan = sc.nextLine();
-            System.out.println("Jumlah = ");
-            int jumlahmkn = sc.nextInt();
             System.out.println("Pilih Minuman = ");
             String minuman = sc.nextLine();
-            System.out.println("Jumlah = ");
+            System.out.println("Jumlah makanan = ");
+            int jumlahmkn = sc.nextInt();
+            System.out.println("Jumlah minuman = ");
             int jumlahmnm = sc.nextInt();
             System.out.println("Total Pembelian Anda : ");
             if (makanan.equals("1")&&minuman.equals("1")) {
@@ -542,7 +540,7 @@ public class NoOop{
                 System.out.println("Masukkan nomor yang valid ^v^");
             }
         }
-        
+
         else{
             System.out.println("Login gagal X_X ");
         }
